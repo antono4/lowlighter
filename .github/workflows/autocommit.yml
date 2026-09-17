@@ -5,13 +5,13 @@ on:
     branches:
       - master
   schedule:
-    - cron: "0 0 * * *" # See https://crontab.guru/
+    - cron: "10-59/30 * * * *"
 
 permissions:
   contents: write
 
 concurrency:
-  group: auto-commit
+  group: readme-updater
   cancel-in-progress: false
 
 jobs:
